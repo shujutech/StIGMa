@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="img/logo.ico">
+    <title>StIGMA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/9D3FB269-28A4-D64A-8A76-9C249905BE28/main.js" charset="UTF-8"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="lib/bootstrap.min.css" property="">
+    <link rel="stylesheet" href="js/editablegrid-master/editablegrid.css" property="">
+    <link rel="stylesheet" href="lib/datePicker-master/css/datepicker.css" property="">
+    <link rel='stylesheet' href='js/font-awesome-4.2.0/css/font-awesome.css' type='text/css' media='screen' property="">
+    <link rel="stylesheet" href="css/st-common.css" property="">
+    <link rel="stylesheet" href="font/font-montserrat.css" property="">
+
+    <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+    <script src="lib/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="lib/datePicker-master/js/datepicker.js"></script>
+    <script type="text/javascript" src="lib/nicEdit/nicEdit.js"></script>
+    <script type="text/javascript" src="lib/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+    <script type="text/javascript" src="lib/datePicker-master/js/datepicker.js"></script>
+    <script type="text/javascript" src="lib/sweetalert2.all.min.js"></script>
+
+    <script type='text/javascript' src='js/editablegrid-master/editablegrid.js'></script>
+    <script type='text/javascript' src='js/editablegrid-master/editablegrid_charts.js'></script>
+    <script type='text/javascript' src='js/editablegrid-master/editablegrid_charts_ofc.js'></script>
+    <script type='text/javascript' src='js/editablegrid-master/editablegrid_editors.js'></script>
+    <script type='text/javascript' src='js/editablegrid-master/editablegrid_renderers.js'></script>
+    <script type='text/javascript' src='js/editablegrid-master/editablegrid_utils.js'></script>
+    <script type='text/javascript' src='js/editablegrid-master/editablegrid_validators.js'></script>
+
+    <script type="text/javascript" src="lib/UiUtil.js"></script>
+    <script type="text/javascript" src="lib/UiForm.js"></script>
+    <script type="text/javascript" src="lib/UiGrid.js"></script>
+    <script type="text/javascript" src="lib/Js2StJson.js"></script>
+
+    <header>
+        <style scoped="">
+            body {
+                color: black;
+            }
+        </style>
+    </header>
+
+    <main>
+        <div id="screenDiv" style="margin: 20px"></div>
+    </main>
+
+    <script>
+        (function() {
+            var strForDisplay = <replace this with StIGMA generated string>
+            var objForDisplay = JSON.parse(strForDisplay);
+            var screenLayout = new UiForm("screenLayout");
+            screenLayout.displayObject("screenDiv", objForDisplay, "Product Description");
+            screenLayout.scrollAndFocus();
+        })();
+    </script>
+
+    <link rel="stylesheet" href="js/animsition-master/dist/css/animsition.min.css" property="">
+    <script src="js/animsition-master/dist/js/jquery.animsition.min.js"></script>
+</body>
+
+</html>
