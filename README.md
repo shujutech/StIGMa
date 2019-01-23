@@ -32,7 +32,7 @@ Usage:
 		<script type="text/javascript" src="lib/UiGrid.js"></script>   
 		<script type="text/javascript" src="lib/Js2StJson.js"></script>
     
-To generate the HTML file in accordance to its JSON input, insert the following lines and call the function:
+To generate the HTML file in accordance to its JSON input, insert the following lines and replace the JSON translated from StIGMA engine. This function is executed upon HTML page got loaded.
 
 		<div id="screenDiv" style="margin: 20px"></div>
 		<script>
