@@ -2,6 +2,7 @@
 
 StIGMA translate JSON real world objects into another JSON structure that is then fed into the following StIGMA web page generator. Translate your real world objects at http://shujutech.mywire.org/corporation?goto=json2web
 
+
 Thereafter follow the below instructions below to embed the dynamically generated web page or alternatively you can copy the div tag with "screenDiv" id into your own web page for modifications and customizations.
 
 
