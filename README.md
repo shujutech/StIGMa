@@ -8,7 +8,7 @@ Thereafter follow the below instructions below to embed the dynamically generate
 
 Usage:
  
- After downloading the zip, extract and place into your web project, please the following js in your project HTML 
+ After downloading the zip, extract and place into your web project, put the following js in your project HTML 
 
 		<link rel="stylesheet" href="lib/bootstrap.min.css" property="">
 		<link rel="stylesheet" href="js/editablegrid-master/editablegrid.css" property=""> 
