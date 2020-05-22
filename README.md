@@ -50,3 +50,15 @@ To generate the HTML file in accordance to its JSON input, insert the following 
 				screenLayout.scrollAndFocus();
 			})();
 		</script>
+
+# Quick Start
+
+For a quick start and understanding how it works, download the project and open "sample-output.html" file in your browser, immediately a more advance html UI sample screen is displayed.
+
+
+# Contact Me
+
+For any further support, please contact me at shujutech@gmail.com
+
+
+
