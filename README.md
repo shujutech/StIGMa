@@ -51,9 +51,11 @@ To generate the HTML file in accordance to its JSON input, insert the following 
 			})();
 		</script>, 
 
+
 # Quick Start
 
 For a quick start and understanding how it works, download the project and open "sample-output.html" file in your browser, immediately a more advance html UI sample screen is displayed.
+
 
 
 # Full Flow From Your Data Model to HTML UI
@@ -61,7 +63,8 @@ For a quick start and understanding how it works, download the project and open 
 We're able to directly convert your data model from a relational database such as Postgres, MariaDb or MySQL into HTML UI for CRUD or as a foundation to the UI you intent to build. Check the full stack with StIGMa, StORMi at http://shujutech.mywire.org/corporation?goto=ormj
 
 
-# Contact Me
+
+# Contact Us
 
 For any further support, please contact me at shujutech@gmail.com
 
