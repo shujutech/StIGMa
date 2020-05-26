@@ -57,7 +57,7 @@ To generate the HTML file in accordance to its JSON input, insert the following 
 For a quick start and understanding how it works, download the project and open "sample-output.html" file in your browser, immediately a more advance HTML UI sample screen is displayed.
 
 
-#Features
+# Features
 
 Capable of translate JSON stucture name/value pair to the following:
 
