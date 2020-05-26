@@ -54,8 +54,21 @@ To generate the HTML file in accordance to its JSON input, insert the following 
 
 # Quick Start
 
-For a quick start and understanding how it works, download the project and open "sample-output.html" file in your browser, immediately a more advance html UI sample screen is displayed.
+For a quick start and understanding how it works, download the project and open "sample-output.html" file in your browser, immediately a more advance HTML UI sample screen is displayed.
 
+
+#Features
+
+Capable of translate JSON stucture name/value pair to the following:
+
+- Textbox
+- Combobox, Dropdown
+- Datetime popup
+- Array of objects (slider to create, update each object)
+- Currency amount
+- Full telephone information with country code, access code etc
+- HTML free text area
+- Create your own, more...
 
 
 # Full Flow From Your Data Model to HTML UI
