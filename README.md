@@ -64,10 +64,12 @@ Capable of translate JSON stucture name/value pair to the following:
 - Textbox
 - Combobox, Dropdown
 - Datetime popup
-- Array of objects (slider to create, update each object)
+- Date popup
+- Array of objects (slider to create, update and delete each object)
 - Currency amount
 - Full telephone information with country code, access code etc
 - HTML free text area
+- Grid of rows
 - Create your own, more...
 
 
