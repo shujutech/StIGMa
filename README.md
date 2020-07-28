@@ -69,6 +69,7 @@ Capable of translate JSON stucture name/value pair to the following:
 - Currency amount
 - Full telephone information with country code, access code etc
 - HTML free text area
+- Data masks for number, currency etc 
 - Grid of rows
 - Create your own, more...
 
