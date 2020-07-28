@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Live Chat</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="font/font-roboto.css">
+		<link rel="stylesheet" href="lib/bootstrap.min.css">
+		<link rel='stylesheet' href="lib/fontawesome-free-5.1.0-web/css/all.css">
+		<link rel="stylesheet" type="text/css" href="dist/jquery.convform.css">
+		<link rel="stylesheet" type="text/css" href="liveChat.css">
+		<style>
+		</style>
+	</head>
+	<body>
+		<div id="chatForm" class="chat-popup">
+			<div class="h-header" style="min-height:50px;">
+				 <div class="title fadeIn">
+					<span style="float:right;padding-right:15px;padding-top:13px;color:white;cursor:pointer">
+						<i class="far fa-window-close" aria-hidden="true" onclick="openChat()"></i>
+					</span>
+				</div>
+				<div class="d_hotline minimize" data-ember-action="" data-ember-action-15="15"><i class="icon icon-ic_close mild"></i></div>
+			</div>
+			<div class="card no-border" style="margin-top:50px">
+				<div id="chat" class="conv-form-wrapper">
+					<form action="" method="GET" class="hidden">
+						<input type="text" data-no-answer="" data-callback="getReply" data-conv-question="Thank you for taking interest in our product, how can we help?">
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="d-hotline h-btn animated zoomIn" data-ember-action="" data-ember-action-8="8" id="open-close-btn" class="open-button" onclick="openChat()">
+			<div class="chat-content">
+				<i class='far fa-comment-alt' style='font-size:27px;padding-top:11px;padding-left:8px'></i>
+			</div>
+			<div class=" "></div>
+		</div>
+
+
+		<script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="dist/autosize.min.js"></script>
+		<script type="text/javascript" src="dist/jquery.convform.js"></script>
+		<script>
+			function openChat() {
+				var btn = document.getElementById("open-close-btn");
+				if (btn.style.display === "table" || btn.style.display === "") {
+					document.getElementById("chatForm").style.display = "block";
+					btn.style.display = "none";
+					$(liveChatForm.wrapper).find(liveChatForm.parameters.inputIdHashTagName).focus();
+				} else {
+					document.getElementById("chatForm").style.display = "none";
+					btn.style.display = "table";
+				}
+			};
+
+			function getReply(state, ready) {
+				var messageObj = $('<div class="message to typing"><div class="typing_loader"></div></div>');
+				setTimeout(function() {
+					$(state.wrapper).find('.message.typing').remove();
+
+					messageObj.html("hello this is working, what do you want?");
+					messageObj.removeClass('typing').addClass('ready');
+					$(state.wrapper).find('#messages').append(messageObj);
+					state.scrollDown();
+				}.bind(state), 150);		
+			};
+
+			jQuery(function($){
+				liveChatForm = $('#chat').convform({selectInputStyle: 'disable'});
+				//console.log(liveChatForm);
+			});
+		</script>
+	</body>
+</html>
+

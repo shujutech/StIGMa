@@ -51,16 +51,13 @@
 
     <script>
         (function() {
-            var strForDisplay = <replace this with StIGMA generated string>
+            var strForDisplay = '{"objectId":13,"clasz":"biz.shujutech.bznes.Person","data":{"Name":{"data":"Bill Gates","updateable":"false","size":"64"},"Birth Date":{"data":"12-Jan-1956","type":"date"}}}';
             var objForDisplay = JSON.parse(strForDisplay);
             var screenLayout = new UiForm("screenLayout");
-            screenLayout.displayObject("screenDiv", objForDisplay, "Product Description");
+            screenLayout.displayObject("screenDiv", objForDisplay, "Person");
             screenLayout.scrollAndFocus();
         })();
     </script>
-
-    <link rel="stylesheet" href="js/animsition-master/dist/css/animsition.min.css" property="">
-    <script src="js/animsition-master/dist/js/jquery.animsition.min.js"></script>
 </body>
 
 </html>
