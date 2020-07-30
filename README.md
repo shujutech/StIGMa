@@ -79,6 +79,10 @@ Capable of translate JSON stucture name/value pair to the following:
 We're able to directly convert your data model from a relational database such as Postgres, MariaDb or MySQL into HTML UI for CRUD or as a foundation to the UI you intent to build. Check the full stack with StIGMa, StORMi at http://shujutech.mywire.org/corporation?goto=ormj
 
 
+# License
+
+StIGMa is bundle with 3rd party software that're all open source and free to use. For us, the software is absolutely FREE and anyone can use, modify, change or remove anything from the code. We will not be liable for any consequences due to the use of this software and is not responsible for either this or any other 3rd party software bundled here. As far we know, all software provided here is open source and free for use.
+
 
 # Contact Us
 
