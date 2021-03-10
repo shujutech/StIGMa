@@ -56,6 +56,8 @@ To generate the HTML file in accordance to its JSON input, insert the following 
 
 For a quick start and understanding how it works, download the project and open "sample-output.html" file in your browser, immediately a more advance HTML UI sample screen is displayed.
 
+![image](https://user-images.githubusercontent.com/13131400/110580089-e31dd400-81a2-11eb-9ccf-aa2781effcc1.png)
+
 
 # Features
 
