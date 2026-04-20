@@ -1,0 +1,132 @@
+{
+  "meta": { "desc": "Product Description", "childName": "Product Description" },
+  "dataset": [
+    {
+      "objectId": 1,
+      "clasz": "Product",
+      "data": {
+        "Name": { "data": "Acme Widget Pro" },
+        "Description": { "data": "A production-ready widget for industrial use.", "size": 40 },
+        "Price": {
+          "data": "USD 1,299.00",
+          "type": "money",
+          "currencies": { "USD": "USD", "EUR": "EUR", "GBP": "GBP", "MYR": "MYR", "JPY": "JPY" }
+        },
+        "InStock": { "data": true, "type": "boolean" },
+        "Identification": {
+          "uifomaster": true,
+          "data": {
+            "BirthDate": { "data": "13-Jun-1985", "type": "date" },
+            "Country": {
+              "type": "country",
+              "lookup": true,
+              "data": { "Descr": { "data": "Malaysia" } },
+              "option": { "1": "Malaysia", "2": "Singapore", "3": "United States", "4": "United Kingdom" }
+            },
+            "State": {
+              "type": "state",
+              "lookup": true,
+              "data": { "Descr": { "data": "Selangor" } },
+              "option": { "1": "Selangor", "2": "Kuala Lumpur", "3": "Penang", "4": "Johor" }
+            },
+            "City": {
+              "type": "city",
+              "lookup": true,
+              "data": { "Descr": { "data": "Petaling Jaya" } },
+              "option": { "1": "Petaling Jaya", "2": "Shah Alam", "3": "Subang Jaya" }
+            }
+          }
+        },
+        "Employment": {
+          "uifomaster": true,
+          "clasz": "Employment",
+          "dataset": [
+            {
+              "objectId": 101,
+              "clasz": "Employment",
+              "data": {
+                "Company": { "data": "Shujutech Sdn Bhd" },
+                "Position": { "data": "Senior Engineer" },
+                "StartDate": { "data": "01-Jan-2020", "type": "date" },
+                "EndDate": { "data": "31-Dec-2023", "type": "date" },
+                "Remark": {
+                  "data": "<p>Led the platform migration project.</p><ul><li>Architected services</li><li>Mentored 4 junior engineers</li></ul>",
+                  "type": "html"
+                }
+              }
+            },
+            {
+              "objectId": 102,
+              "clasz": "Employment",
+              "data": {
+                "Company": { "data": "Previous Corp" },
+                "Position": { "data": "Software Engineer" },
+                "StartDate": { "data": "15-Mar-2016", "type": "date" },
+                "EndDate": { "data": "31-Dec-2019", "type": "date" },
+                "Remark": { "data": "<p>Built internal tooling.</p>", "type": "html" }
+              }
+            }
+          ]
+        },
+        "BankAccount": {
+          "uifomaster": true,
+          "clasz": "BankAccount",
+          "dataset": []
+        },
+        "Address": {
+          "uifomaster": true,
+          "clasz": "Address",
+          "dataset": []
+        },
+        "MobilePhone": {
+          "uifomaster": true,
+          "clasz": "MobilePhone",
+          "dataset": [
+            {
+              "objectId": 201,
+              "clasz": "MobilePhone",
+              "data": {
+                "Number": { "data": "60-12-3456789", "type": "mobilephone" },
+                "Label": { "data": "Personal" }
+              }
+            }
+          ]
+        },
+        "Email": {
+          "uifomaster": true,
+          "clasz": "Email",
+          "dataset": [
+            {
+              "objectId": 301,
+              "clasz": "Email",
+              "data": {
+                "Address": { "data": "contact@example.com", "size": 30 },
+                "Label": { "data": "Work" }
+              }
+            }
+          ]
+        },
+        "Telephone": {
+          "uifomaster": true,
+          "clasz": "Telephone",
+          "dataset": []
+        },
+        "Spouse": {
+          "uifomaster": true,
+          "clasz": "Spouse",
+          "dataset": []
+        },
+        "Children": {
+          "uifomaster": true,
+          "clasz": "Child",
+          "dataset": []
+        },
+        "EmergencyContact": {
+          "uifomaster": true,
+          "clasz": "EmergencyContact",
+          "dataset": []
+        }
+      }
+    }
+  ]
+}

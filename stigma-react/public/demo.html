@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StIGMa Form — Custom Element Demo</title>
+    <script crossorigin src="https://unpkg.com/react@19/umd/react.production.min.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@19/umd/react-dom.production.min.js"
+    ></script>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 0;
+        background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+        min-height: 100vh;
+      }
+      header {
+        padding: 16px 24px;
+        border-bottom: 1px solid #ddd;
+        background: rgba(255, 255, 255, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>StIGMa Form — Custom Element Demo</h1>
+      <p>
+        Drop-in <code>&lt;stigma-form&gt;</code> usage. Loads the UMD bundle built by
+        <code>npm run build:lib</code>.
+      </p>
+    </header>
+    <stigma-form id="form" title="Product Description"></stigma-form>
+    <script src="../dist/stigma-form.umd.js"></script>
+    <script>
+      fetch('./sample-data.json')
+        .then(function (r) {
+          return r.text();
+        })
+        .then(function (text) {
+          document.getElementById('form').setAttribute('data', text);
+        });
+    </script>
+  </body>
+</html>
