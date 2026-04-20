@@ -28,8 +28,8 @@
 	width: auto !important;
 	padding-left: 10px;
 	padding-right: 10px;
-	font-size: medium;
-	background-color: rgb(238, 238, 238);
+	font-size: small;
+	/* background-color: rgb(238, 238, 238); */
 }
 .page-button:hover {
 	background-color: rgb(207, 207, 207);
