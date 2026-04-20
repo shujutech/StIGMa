@@ -140,7 +140,18 @@ function Body({
           );
         }
         if (item.kind === 'object') {
-          const nested = (item.field.data as unknown as StigmaObject) ?? { data: {} };
+          const raw = item.field.data as unknown;
+          // StIGMa JSON lets a nested object's `data` either be a wrapped
+          // StigmaObject (`{ data: {...}, objectId?, clasz? }`) or the inner
+          // field-map directly. Detect which we have.
+          const isWrapped =
+            raw != null &&
+            typeof raw === 'object' &&
+            'data' in (raw as Record<string, unknown>) &&
+            typeof (raw as { data?: unknown }).data === 'object';
+          const nested: StigmaObject = isWrapped
+            ? (raw as StigmaObject)
+            : ({ data: (raw as Record<string, StigmaField>) ?? {} } as StigmaObject);
           return (
             <Fragment key={item.fqn}>
               <fieldset className="st-fieldset pb-6 md:pb-10 pl-2 md:pl-4 border border-gray-300 float-left w-full my-2 bg-white/30 rounded-md">
